@@ -1,6 +1,6 @@
 # GOOGLE SUMMER OF CODE 2025 - SU2
 
-<small>Author: Harsh Mishra</small>
+### Author: Harsh Mishra
 
 <p>
 This repository chronicles my work during Google Summer of Code 2025 with the SU2 Foundation.</br>
