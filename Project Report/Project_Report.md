@@ -6,36 +6,35 @@
 
 **Project**: Automating SU2 Validation Cases with GitHub Actions — A Scalable CI/CD Pipeline for V&V
 
-**Organization**: [SU2](https://su2code.github.io)
+**Organization**: [SU2 Foundation](https://su2code.github.io)
 
 **Description**:  
 This project delivers an automation framework for running, verifying, and publishing **SU2** validation cases using **GitHub Actions**. It enables fully reproducible and scalable verification & validation (V&V) of CFD solvers without manual intervention.
 
 The system comprises **two coordinated workflows**:
 
-1. **Main Execution Pipeline** – Builds SU2, runs the selected validation cases, and generates results.
-2. **Results Publishing Pipeline** – Processes outputs, generates Markdown case pages, updates the V&V site data, and commits changes to the results repository.
+1. **Main Workflow** – Builds SU2, runs the selected validation cases, and generates results.
+2. **Results Publishing Workflow** – Processes outputs, generates Markdown case pages, updates the V&V site data, and commits changes to the results repository.
 
-The pipelines handle everything from **fetching meshes/restart data**, **building SU2 from source**, **executing cases**, **generating plots**, to **publishing web-ready reports** — all through a single parameterized workflow dispatch.
+The workflow handles everything from **fetching meshes/restart data**, **building SU2 from source**, **executing cases**, **generating plots**, to **publishing web-ready reports** — all through a single parameterized workflow dispatch.
 
 ---
 
 ## What Work Was Done
 
-### 1. **Main Execution Pipeline** (`su2-testing-final.yml`)
+### 1. **Main Workflow**
 
 The core workflow focuses on robust, end-to-end automation:
 
 - **Input Validation & Sanitization**
   - Ensures logical combinations of category, case code, turbulence model, and configuration.
-  - Sanitizes author names and configuration names to meet strict formatting rules.
 - **Dynamic Asset Acquisition**
   - Downloads only required meshes and restart files from Google Drive based on user inputs.
   - Uses a JSON-based file mapping to identify necessary assets.
 - **Environment Setup**
-  - Installs system dependencies (MPI, Boost, METIS, HDF5, etc.).
+  - Installs system dependencies (Boost, METIS, HDF5, etc.).
   - Installs Python dependencies (NumPy, Matplotlib, PyVista, Pandas).
-  - Builds SU2 from the specified branch using `meson` and `ninja` with PyWrapper enabled.
+  - Builds SU2 from the specified branch using `meson` and `ninja` with PyWrapper enabled and MPI disabled.
 - **Automated Execution**
   - Invokes `Automation.py` per case/configuration to generate consistent result folders and plots.
   - Handles all combinations: single case, category, or complete suite.
@@ -47,14 +46,12 @@ The core workflow focuses on robust, end-to-end automation:
 
 ---
 
-### 2. **Results Publishing Pipeline** (`su2-results-final.yml`)
+### 2. **Results Publishing Workflow**
 
 This companion workflow processes and integrates results into the public-facing V&V site:
 
 - **Validation of Inputs**
   - Enforces consistency between case code, case name, and flow condition.
-- **Author Name Sanitization**
-  - Ensures author identifiers are safe for branch naming.
 - **Branch Handling**
   - Checks for the existence of the target results branch and checks it out.
 - **Markdown Generation**
@@ -69,13 +66,12 @@ This companion workflow processes and integrates results into the public-facing 
 
 ---
 
-## Benefits of the Pipeline
+## Benefits of the Workflow
 
 1. **Reproducibility** – Any case can be re-run with identical configurations.
 2. **Scalability** – Handles single cases or entire validation suites.
 3. **Traceability** – Results are archived as artifacts and committed to version control.
-4. **Integration** – Supports manual, scheduled, and PR-triggered runs.
-5. **Low-friction Sharing** – Automatically generates web-ready outputs for collaborators and reviewers.
+4. **Low-friction Sharing** – Automatically generates web-ready outputs for collaborators and reviewers.
 
 ---
 
@@ -84,7 +80,14 @@ This companion workflow processes and integrates results into the public-facing 
 - **Parallel Execution** – To reduce turnaround time for large validation suites.
 - **Containerized Builds** – For consistent, portable execution environments.
 - **Automated Regression Checks** – Integrate benchmark comparison to detect deviations early.
-- **Extended Coverage** – Expand automation to all NASA TMR benchmark cases.
+- **Extended Coverage** – Expand automation to all NASA Turbulence Modelling Resource benchmark cases.
+
+---
+
+## Important Links
+
+Link to Main Workflow :
+Link to Results Publishing Workflow :
 
 ---
 
@@ -92,4 +95,4 @@ This companion workflow processes and integrates results into the public-facing 
 
 I sincerely thank my mentors, **Dr. Nijso Beishuizen** and **Dr. Edwin van der Weide**, for their guidance, technical advice, and encouragement throughout the project. This experience deepened my expertise in **CI/CD for scientific software**, **workflow automation**, and **open-source CFD development**.
 
-It has been a rewarding journey contributing to **SU2**, and I look forward to extending this work further.
+It has been a rewarding journey contributing to **SU2 Foundation**, and I look forward to extending this work further.
