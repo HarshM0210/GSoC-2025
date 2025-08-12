@@ -10,9 +10,7 @@ The system comprises **two coordinated workflows**:
 
 The workflow handles everything from **fetching meshes/restart data**, **building SU2 from source**, **executing cases**, **generating plots**, to **publishing web-ready reports** — all through a single parameterized workflow dispatch.
 
----
-
-## Important Links
+**Important Links**:
 
 - **Link to Main Workflow** -
 - **Link to Results Publishing Workflow** -
