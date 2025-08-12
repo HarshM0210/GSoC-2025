@@ -78,7 +78,6 @@ This companion workflow processes and integrates results into the public-facing 
 ## What’s Left to Do
 
 - **Parallel Execution** – To reduce turnaround time for large validation suites.
-- **Containerized Builds** – For consistent, portable execution environments.
 - **Automated Regression Checks** – Integrate benchmark comparison to detect deviations early.
 - **Extended Coverage** – Expand automation to all NASA Turbulence Modelling Resource benchmark cases.
 
@@ -86,8 +85,8 @@ This companion workflow processes and integrates results into the public-facing 
 
 ## Important Links
 
-Link to Main Workflow :
-Link to Results Publishing Workflow :
+- **Link to Main Workflow** -
+- **Link to Results Publishing Workflow** -
 
 ---
 
@@ -95,4 +94,4 @@ Link to Results Publishing Workflow :
 
 I sincerely thank my mentors, **Dr. Nijso Beishuizen** and **Dr. Edwin van der Weide**, for their guidance, technical advice, and encouragement throughout the project. This experience deepened my expertise in **CI/CD for scientific software**, **workflow automation**, and **open-source CFD development**.
 
-It has been a rewarding journey contributing to **SU2 Foundation**, and I look forward to extending this work further.
+It has been a rewarding journey contributing to the **SU2 Foundation**, and I look forward to extending this work further.
