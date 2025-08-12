@@ -1,8 +1,8 @@
 # Project Report
 
-**Contributor**: [Harsh Mishra](linkedin.com/in/harsh-mishra-aa1a16289)
+**Contributor**: Harsh Mishra
 
-**Mentors**: [Dr. Nijso Beishuizen](linkedin.com/in/nijso-beishuizen), [Dr. Edwin van der Weide](linkedin.com/in/edwin-van-der-weide-7256946)
+**Mentors**: Dr. Nijso Beishuizen, Dr. Edwin van der Weide
 
 **Project**: Automating SU2 Validation Cases with GitHub Actions — A Scalable CI/CD Pipeline for V&V
 
