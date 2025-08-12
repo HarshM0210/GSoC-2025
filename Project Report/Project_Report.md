@@ -1,4 +1,4 @@
-# Final Report
+# Project Report
 
 **Student**: Harsh Mishra
 
