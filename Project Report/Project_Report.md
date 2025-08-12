@@ -85,8 +85,8 @@ This companion workflow processes and integrates results into the public-facing 
 
 ## Important Links
 
-- **Link to Main Workflow** -
-- **Link to Results Publishing Workflow** -
+- **Main Workflow** -
+- **Results Publishing Workflow** -
 
 ---
 

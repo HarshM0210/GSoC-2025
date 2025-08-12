@@ -12,8 +12,8 @@ The workflow handles everything from **fetching meshes/restart data**, **buildin
 
 **Important Links**:
 
-- **Link to Main Workflow** -
-- **Link to Results Publishing Workflow** -
+- **Main Workflow** -
+- **Results Publishing Workflow** -
 
 ---
 
