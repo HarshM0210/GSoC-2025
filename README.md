@@ -1,11 +1,15 @@
-# SU2 CODE ASSIGNMENTS FOR GOOGLE SUMMER OF CODE 2025
+# GOOGLE SUMMER OF CODE 2025 - SU2
+
 # AUTHOR: HARSH MISHRA
 
-<p>This repository contains my comprehensive solutions to a series of assignments provided by the SU2 development team. The tasks encompassed building SU2 from source with various configurations, developing and validating CFD test cases, and extending solver capabilities. Key contributions include:</p>
+<p>
+This repository chronicles my work during Google Summer of Code 2025 with the SU2 Foundation.</br>
+It contains:
+</p>
+
 <ul>
-  <li>Compiling SU2 with multiple build options tailored for development and testing.</li>
-  <li>Designing and simulating a 2D axisymmetric turbulent jet flow using custom mesh generation and boundary condition setup.</li>
-  <li>Utilizing the SU2 Python wrapper to implement a spatially varying wall temperature profile in a flat plate test case.</li>
-  <li>Enhancing SU2’s post-processing framework by integrating the local speed of sound as a new volume field, screen output, and history output variable.</li>
+  <li>Solutions to the technical assignments from the SU2 Development Team.</li>
+  <li>A comprehensive final project report outlining the goals, implementation, and results of my GSoC’25 project.</li>
 </ul>
-<p>These efforts demonstrate a hands-on understanding of SU2’s infrastructure and a commitment to advancing its usability and physical modeling capabilities.</p>
+
+<p>Together, these resources reflect my contributions to advancing SU2’s open-source mission during the program.</p>
