@@ -85,7 +85,7 @@ This companion workflow processes and integrates results into the public-facing 
 
 ## Important Links
 
-- **Main Workflow** - <a href="https://github.com/su2code/VandV_actions">Vandv_actions</a>
+- **Main Workflow** - <a href="https://github.com/su2code/VandV_Actions">Vandv_actions</a>
 - **Results Publishing Workflow** - <a href="https://github.com/su2code/su2code.github.io">SU2 Project Website</a>
 
 ---
