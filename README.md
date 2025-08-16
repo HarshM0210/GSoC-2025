@@ -1,7 +1,7 @@
 # Google Summer Of Code 2025 - SU2 <br><span style="font-size:50%;">Author: Harsh Mishra</span>
 
 **Description**:  
-This project delivers an automation framework for running, verifying, and publishing **SU2** validation cases using **GitHub Actions**. It enables fully reproducible and scalable verification & validation (V&V) of CFD solvers without manual intervention.
+This project delivers an automation framework for running, verifying, and publishing **SU2** V&V test cases using **GitHub Actions**. It enables fully reproducible and scalable verification & validation (V&V) of CFD solvers without manual intervention.
 
 The system comprises **two coordinated workflows**:
 
