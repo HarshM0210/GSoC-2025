@@ -6,14 +6,14 @@ This project delivers an automation framework for running, verifying, and publis
 The system comprises **two coordinated workflows**:
 
 1. **Main Workflow** – Builds SU2, runs the selected validation cases, and generates results.
-2. **Results Publishing Workflow** – Processes outputs, generates Markdown case pages, updates the V&V site data, and commits changes to the results repository.
+2. **Results Publishing Workflow** – Processes outputs, generates markdown case pages, updates the V&V site data, and commits changes to the results repository.
 
 The workflow handles everything from **fetching meshes/restart data**, **building SU2 from source**, **executing cases**, **generating plots**, to **publishing web-ready reports** — all through a single parameterized workflow dispatch.
 
 **Important Links**:
 
 - **Main Workflow** - <a href="https://github.com/su2code/VandV_Actions">VandV_Actions</a>
-- **Results Publishing Workflow** - <a href="https://github.com/su2code/su2code.github.io">VandV_Actions</a>
+- **Results Publishing Workflow** - <a href="https://github.com/su2code/su2code.github.io">SU2 Project Website</a>
 
 ---
 
