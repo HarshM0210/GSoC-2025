@@ -14,7 +14,7 @@ This project delivers an automation framework for running, verifying, and publis
 The system comprises **two coordinated workflows**:
 
 1. **Main Workflow** – Builds SU2, runs the selected validation cases, and generates results.
-2. **Results Publishing Workflow** – Processes outputs, generates Markdown case pages, updates the V&V site data, and commits changes to the results repository.
+2. **Results Publishing Workflow** – Processes outputs, generates markdown case pages, updates the V&V site data, and commits changes to the results repository.
 
 The workflow handles everything from **fetching meshes/restart data**, **building SU2 from source**, **executing cases**, **generating plots**, to **publishing web-ready reports** — all through a single parameterized workflow dispatch.
 
@@ -29,7 +29,7 @@ The core workflow focuses on robust, end-to-end automation:
 - **Input Validation & Sanitization**
   - Ensures logical combinations of category, case code, turbulence model, and configuration.
 - **Dynamic Asset Acquisition**
-  - Downloads only required meshes and restart files from Google Drive based on user inputs.
+  - Downloads only required mesh and restart files from Google Drive based on user inputs.
   - Uses a JSON-based file mapping to identify necessary assets.
 - **Environment Setup**
   - Installs system dependencies (Boost, METIS, HDF5, etc.).
